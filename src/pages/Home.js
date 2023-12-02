@@ -28,7 +28,7 @@ function HideOnScroll(props) {
 }
 
 function Home({ props }) {
-    const apiKey= process.env.REACT_APP_OPENAI_API_KEY;
+  const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
   const [image, setImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [generatedImage, setGeneratedImage] = useState(null);
@@ -82,7 +82,7 @@ function Home({ props }) {
         data,
         {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${apiKey}`,
           },
         }
       );
@@ -177,10 +177,14 @@ function Home({ props }) {
         onChange={handleImageChange}
       />
 
-
-      <Button size="large" variant="contained" onClick={fetchAIResponse} sx={{
-        margin:'10px'
-      }}>
+      <Button
+        size="large"
+        variant="contained"
+        onClick={fetchAIResponse}
+        sx={{
+          margin: "10px",
+        }}
+      >
         fetch
       </Button>
 
