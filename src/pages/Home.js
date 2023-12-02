@@ -82,7 +82,7 @@ function Home({ props }) {
         data,
         {
           headers: {
-            Authorization: `Bearer ${apiKey}`,
+            Authorization: `Bearer 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`,
           },
         }
       );
