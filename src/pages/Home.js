@@ -11,21 +11,7 @@ import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import CircularProgress from "@mui/material/CircularProgress";
 import Feedback from "../components/Feedback";
 import { Link } from "react-router-dom";
-function HideOnScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-  });
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
+import Header from "../components/Header";
 
 function Home({ props }) {
   const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
@@ -87,6 +73,7 @@ function Home({ props }) {
         }
       );
       setIsLoading(false);
+      //scroll to bottom
       setResponse(result.data.choices[0]);
       console.log(result.data.choices[0]);
     } catch (error) {
@@ -101,24 +88,7 @@ function Home({ props }) {
 
   return (
     <Box sx={{ minheight: "100vh" }}>
-      <HideOnScroll {...props}>
-        <AppBar>
-          <Toolbar sx={{ height: "10vh", background: "#246b4d" }}>
-            <Box sx={{ flexGrow: 1 }}>
-              <img src={Logo} alt="Logo" style={{ height: 100 }} />
-            </Box>
-
-            <Button variant="outlined" color="inherit">
-              Community
-            </Button>
-            <Button variant="outlined" color="inherit">
-              <Link style={{ color: "white" }} to="/">
-                Logout
-              </Link>
-            </Button>
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
+      <Header />
       <Box
         display="flex"
         justifyContent="center"

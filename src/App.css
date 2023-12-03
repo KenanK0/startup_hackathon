@@ -1,80 +1,83 @@
-.hyperlinks {
-  background-color: #175728e0;
-  padding: 10px 20px;
-  font-family: Helvetica;
-}
-.links {
-  background-color: #175728e0;
-  background-size: cover;
-  height: 50%;
-  padding: 5px 5px;
-  color: white;
+body, h1, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
-.placeholder-1:hover {
-  color: rgb(43, 144, 226);
-}
-.placeholder-2:hover {
-  color: rgb(43, 144, 226);
-}
-.placeholder-1 {
-  padding: 10px 20px;
-}
-.hyperlinks a {
-  color: white;
-}
+
+
 .main {
   min-height: 100vh;
-  background-image: url("./assets/background-image.jpg");
+  font-family: 'Helvetica', sans-serif;
+  background-image: url('./assets/background-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0;
-  font-family: Helvetica;
+  color: #fff; 
+}
+
+.links {
+  background-color: rgba(23, 87, 40, 0.973); 
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.hyperlinks a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.placeholder-1:hover,.placeholder-2:hover {
+  color: #2b90e2; 
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  padding: 20px;
+}
+
+.welcome {
+  background-color: rgba(23, 87, 40, 0.7); 
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  margin: 0 auto;
+  width: 250px; 
+  height: auto;
+  margin-bottom: 0px; 
 }
 
-.container {
-  display: flex;
-  /* align-items: space-evenly; */
-  justify-content: center;
-  padding: 20px 80px;
-}
-.welcome {
-  color: white;
-  background-color: #175728bb;
-  padding: 10px 30px;
-  border-radius: 20px;
-}
 .heading {
-  font-weight: bolder;
-  font-size: 70px;
-  text-align: center;
-}
-.intro {
-  font-size: x-large;
-}
-.home {
-  text-align: center;
-}
-.getstarted {
-  background-color: rgb(10, 184, 33);
-  color: antiquewhite;
-  float: right;
-  border-radius: 9px;
-  padding: 15px;
-  border-style: none;
   font-weight: bold;
-  text-decoration: none;
-  color: white;
-  /* height: 10%; */
+  font-size: 3em; 
 }
+
+.intro {
+  font-size: 1.5em; 
+  margin-bottom: 20px; 
+}
+
+.getstarted {
+  background-color: #0ab821; 
+  color: #f5f5f5; 
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
 .getstarted:hover {
-  background-color: darkgreen;
+  background-color: #0c8d17; 
   transform: scale(1.1);
 }

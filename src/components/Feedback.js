@@ -67,6 +67,7 @@ function Feedback({ data }) {
                     margin: 0,
                     padding: 0,
                     fontFamily: "Gloria Hallelujah",
+                    color:'black'
                   }}
                 >
                   Cleaning Instructions
@@ -99,6 +100,7 @@ function Feedback({ data }) {
                   style={{
                     margin: 0,
                     padding: 0,
+                    color:'black',
 
                     fontFamily: "Gloria Hallelujah",
                   }}
@@ -124,6 +126,7 @@ function Feedback({ data }) {
                 // background: "#246b4d",
                 margin: "8px",
                 marginTop: "20px",
+                color:'black',
                 boxShadow:
                   "0 5px 10px rgba(34, 139, 34, 0.4), 0 8px 25px rgba(0, 100, 0, 0.3)",
               }}
@@ -133,6 +136,7 @@ function Feedback({ data }) {
                   style={{
                     margin: 0,
                     padding: 0,
+                    color:'black',
 
                     fontFamily: "Gloria Hallelujah",
                   }}

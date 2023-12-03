@@ -16,28 +16,23 @@ function App() {
   return (
     <div className="main">
       <br></br>
-      <br></br>
-      <section className="container">
-        <form className="welcome">
-          <div className="image-container">
-            <img src={Logo} className="logo" width="250" height="250" />
+      <section class="container">
+        <form class="welcome">
+          <div class="image-container">
+            <img src={Logo} class="logo" alt="Logo" />
           </div>
-          <h1 className="heading">Welcome to CleanIT </h1>
-          <p className="intro">
+          <h1 class="heading">Welcome to CleanIT</h1>
+          <br></br>
+          <p class="intro">
             Transforming waste management through image recognition and AI.
             <br />
             Snap, learn, and recycle with ease, making a sustainable impact
             effortlessly
           </p>
           <br></br>
-          <div className="getstarted">
-            <Link to="/home" style={{ color: "white" }}>
-              Get Started
-            </Link>
-          </div>
-
-          <br></br>
-          <br></br>
+          <Link to="/home">
+            <button class="getstarted">Get Started</button>
+          </Link>
         </form>
       </section>
     </div>
